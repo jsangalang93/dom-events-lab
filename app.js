@@ -1,5 +1,6 @@
 /*-------------------------------- Constants --------------------------------*/
 const numbers = document.querySelectorAll(".button")
+const button0Element = document.querySelector()
 const button1Element = document.querySelector()
 // const button2Element = document.querySelector()
 // const button3Element = document.querySelector()
@@ -17,6 +18,9 @@ const button1Element = document.querySelector()
 // const plusButton = document.querySelector()
 
 /*-------------------------------- Variables --------------------------------*/
+let operator = '';
+let numA = '';
+let numB = '';
 
 /*------------------------ Cached Element References ------------------------*/
 
@@ -29,7 +33,23 @@ numbers.forEach(number => {
     });
   });
 
-  if()
+//   if(button.target.id === 0) {
+//   return 0;
+//   }
+
+//   if(button === '+') function() {
+//       operator = button;
+//       console.log('awesome');
+//   } else if {(button === '-') => {
+//     console.log()
+//   }} else if {(button === '%') => {
+//     console.log()
+//   }} else if {(button === '*') => {
+//         console.log()
+//     }} else {(button === '=') => {
+//         console.log()
+//     }
+// }
 
 
 /*-------------------------------- Functions --------------------------------*/
