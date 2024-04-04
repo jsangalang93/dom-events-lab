@@ -1,23 +1,36 @@
 /*-------------------------------- Constants --------------------------------*/
-const button1Element
-const button2Element
-const button3Element
-const button4Element
-const button5Element
-const button6Element
-const button7Element
-const button8Element
-const button9Element
-const equalsButton
-const minusButton
-const timesButton
-const divideButton
-const clearButton
+const numbers = document.querySelectorAll(".button")
+const button1Element = document.querySelector()
+// const button2Element = document.querySelector()
+// const button3Element = document.querySelector()
+// const button4Element = document.querySelector()
+// const button5Element = document.querySelector()
+// const button6Element = document.querySelector()
+// const button7Element = document.querySelector()
+// const button8Element = document.querySelector()
+// const button9Element = document.querySelector()
+// const equalsButton = document.querySelector()
+// const minusButton = document.querySelector()
+// const timesButton = document.querySelector()
+// const divideButton = document.querySelector()
+// const clearButton = document.querySelector()
+// const plusButton = document.querySelector()
 
 /*-------------------------------- Variables --------------------------------*/
 
 /*------------------------ Cached Element References ------------------------*/
 
 /*----------------------------- Event Listeners -----------------------------*/
+numbers.forEach(number => {
+    number.addEventListener("click", (event) => {
+      // This log is for testing purposes to verify we're getting the correct value
+      console.log(event.target.innerText);
+      // Future logic to capture the button's value goes here...
+    });
+  });
+
+  if()
+
 
 /*-------------------------------- Functions --------------------------------*/
+
