@@ -2,9 +2,15 @@
 const buttonElement = document.querySelectorAll(".button")
 let numberButton = '';
 let operatorButton = '';
+let equalsButton = document.querySelector('.taDa')
 let num1 ='';
 let num2 = '';
 let displayElement = document.querySelector('.display')
+// let sum = '+';
+// let minus = '-';
+// let times = '*';
+// let divide = '/';
+let taDa = '';
 
 
 
@@ -18,7 +24,9 @@ buttonElement.forEach (numberButton => {
         // store operator and clear display after storing 
         operatorButton = numberButton.textContent
             displayElement.textContent = num2
-                    console.log(operatorButton);  
+                    console.log(operatorButton);
+                    // console.log(eval('num1' + 'num2'));
+
 
     }else if(numberButton.textContent === '/') {
         operatorButton = numberButton.textContent
@@ -30,41 +38,66 @@ buttonElement.forEach (numberButton => {
             displayElement.textContent = num2
             console.log(operatorButton);  
 
-    }else if(numberButton.textContent === '+') {
-        operatorButton = numberButton.textContent
-            displayElement.textContent = num2
-            console.log(operatorButton);
-
     }else if(numberButton.textContent === '-') {
         operatorButton = numberButton.textContent
             displayElement.textContent = num2
-            console.log(operatorButton);                     
+            console.log(operatorButton);  
+
     }else if(numberButton.textContent === 'C') {
         operatorButton = numberButton.textContent
             displayElement.textContent = '',
+            num1 = ''
+            num2 = ''
+            taDa = ''
+            operatorButton = ''
+
             console.log(operatorButton);
        
     }else if(numberButton.textContent !== '=') {
         if(operatorButton !== '') {
         num2 += numberButton.textContent
         displayElement.textContent = num2
-    }
-        else { 
+    }else { 
             num1 += numberButton.textContent
             displayElement.textContent = num1
         }
-        
-    } else {}
-       
-   });
-});
+//     }
+// })
+    
+//     })
+
+    // equalsButton.forEach (equalsButton => 
+        equalsButton.addEventListener('click', () => {
+            taDa = eval(num1 + operatorButton + num2)
+            displayElement.textContent = taDa
+            console.log(taDa);
+        })
+    
+    }
+})
+    
+}) 
 
 
 
 
 
+
+
+
+
+
+//         if(numberButton.textContent === '=') {
+//             taDa = eval(num1 + operatorButton + num2)
+//             displayElement.textContent = taDa
+//             console.log(taDa)
+//     })
+// });
 
 // buttonElement.addEventListener('click', () =>{
+//   if(numberButton.textContent === '=') {
+//   }
+// });     
     
 
 
